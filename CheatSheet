@@ -5,7 +5,9 @@
 | [*] Content                                                 |
 +-------------------------------------------------------------+
 | [1]. Connect FreeNAS ISCSI to Ubuntu M/C                    |
-| [2]                                                         |
+| [2]. Storage                                                |
+| [2.1].. Volume Manager (Creating a pool)                    |
+| [2.2].. Create Zvolume                                      |
 | [3]                                                         |
 | [4]                                                         |
 | [5]                                                         |
@@ -13,7 +15,7 @@
 +-------------------------------------------------------------+
 
 
-[] Connect FreeNAS ISCSI to Ubuntu M/C
+[1] Connect FreeNAS ISCSI to Ubuntu M/C
 -----------------------------------------
 
 * sudo apt-get install open-iscsi
@@ -49,3 +51,22 @@
 * Note down the record id found by the discovery . You need the same for login. Login, must use a node record id found by the discovery
 	
 	sudo iscsiadm --mode node --targetname RECORD-ID --portal ISCSI-SERVER-IP-ADDRESS:PORT --login
+	
+
+[2] Storage
+--------------
+
+[2.1] Volume Manager (Creating a pool)
+------------------------------------------
+
+* Storage -> Volume Manager
+
+For more see pic (Create Pool Step 1 and Step 2)
+
+[2.2] Create Zvolume
+-----------------------
+
+* Storage -> (click on the pool name in table) -> (at bottom click on Create zvol)
+
+For more see pic (Create Zvol Step 1 and Step 2)
+
