@@ -1,0 +1,51 @@
+[*] FreeNAS CheatSheet
+--------------------------
+
++-------------------------------------------------------------+
+| [*] Content                                                 |
++-------------------------------------------------------------+
+| [1]. Connect FreeNAS ISCSI to Ubuntu M/C                    |
+| [2]                                                         |
+| [3]                                                         |
+| [4]                                                         |
+| [5]                                                         |
+| [6]                                                         |
++-------------------------------------------------------------+
+
+
+[] Connect FreeNAS ISCSI to Ubuntu M/C
+-----------------------------------------
+
+* sudo apt-get install open-iscsi
+
+* sudo sudo apt-get install open-iscsi
+
+* in the file
+	
+	node.startup = automatic
+	node.session.auth.username = MY-ISCSI-USER
+	node.session.auth.password = MY-ISCSI-PASSWORD
+	discovery.sendtargets.auth.username = MY-ISCSI-USER
+	discovery.sendtargets.auth.password = MY-ISCSI-PASSWORD
+	node.session.timeo.replacement_timeout = 120
+	node.conn[0].timeo.login_timeout = 15
+	node.conn[0].timeo.logout_timeout = 15
+	node.conn[0].timeo.noop_out_interval = 10
+	node.conn[0].timeo.noop_out_timeout = 15
+	node.session.iscsi.InitialR2T = No
+	node.session.iscsi.ImmediateData = Yes
+	node.session.iscsi.FirstBurstLength = 262144
+	node.session.iscsi.MaxBurstLength = 16776192
+	node.conn[0].iscsi.MaxRecvDataSegmentLength = 65536
+
+* Save and close the file. Restart open-iscsi service
+	
+	sudo /etc/init.d/open-iscsi restart
+
+* Now you need to run a discovery against the iscsi target host
+
+	sudo iscsiadm --mode discovery --type sendtargets --portal ISCSI-SERVER-IP-ADDRESS
+	
+* Note down the record id found by the discovery . You need the same for login. Login, must use a node record id found by the discovery
+	
+	sudo iscsiadm --mode node --targetname RECORD-ID --portal ISCSI-SERVER-IP-ADDRESS:PORT --login
