@@ -61,3 +61,4 @@ To create a pool use Volume Manager button in Storage section
 ```
 Storage -> Volume Manager
 ```
+![Alt text](Images/Create-pool-step-1.png)
