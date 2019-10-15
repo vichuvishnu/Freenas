@@ -63,6 +63,7 @@ Storage -> Volume Manager
 ```
 Step 1:
 ![Alt text](Images/Create-pool-step-1.png)
+
 Step 2:
 ![Alt text](Images/Create -pool-step2.png)
 
