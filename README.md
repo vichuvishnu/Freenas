@@ -65,5 +65,5 @@ Step 1:
 ![Alt text](Images/Create-pool-step-1.png)
 
 Step 2:
-![Alt text1](https://github.com/vichuvishnu/Freenas/edit/master/Images/Create -pool-step2.png)
+![Alt text1](https://github.com/vichuvishnu/Freenas/edit/master/Images/Create-pool-step2.png)
 
