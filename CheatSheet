@@ -20,7 +20,7 @@
 
 * sudo apt-get install open-iscsi
 
-* sudo sudo apt-get install open-iscsi
+* sudo vim /etc/iscsi/iscsid.conf
 
 * in the file
 	
