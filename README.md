@@ -2,13 +2,13 @@
 
 
 ### Content
-* Connect FreeNAS ISCSI to Ubuntu M/C
-* Storage
-  * Volume Manager (Creating a pool) 
-  * Create Zvolume
+1. Connect FreeNAS ISCSI to Ubuntu M/C
+1. Storage
+   1. Volume Manager (Creating a pool)
+   1. Create Zvolume
 
 
-#### * Connect FreeNAS ISCSI to Ubuntu M/C
+#### 1. Connect FreeNAS ISCSI to Ubuntu M/C
 To connect FreeNAS ISCSI to and ubuntu m/c you need to install a ISCSI client and do some configurations. 
 First you need to install open-iscsi
 
@@ -53,4 +53,11 @@ sudo iscsiadm --mode node --targetname RECORD-ID --portal ISCSI-SERVER-IP-ADDRES
 Finally restart the service again
 ```bash
 sudo /etc/init.d/open-iscsi restart
+```
+
+#### 2. Storage
+##### 2.1 Volume Manager (Creating a pool)
+To create a pool use Volume Manager button in Storage section
+```
+Storage -> Volume Manager
 ```
