@@ -38,3 +38,19 @@ node.session.iscsi.FirstBurstLength = 262144
 node.session.iscsi.MaxBurstLength = 16776192
 node.conn[0].iscsi.MaxRecvDataSegmentLength = 65536
 ```
+Save and close the file. Restart open-iscsi service
+```bash
+sudo /etc/init.d/open-iscsi restart
+```
+Now you need to run a discovery against the iscsi target host
+```bash
+iscsiadm --mode discovery --type sendtargets --portal ISCSI-SERVER-IP-ADDRESS
+```
+Note down the record id found by the discovery. You need the same for login. Login, must use a node record id found by the discovery
+```bash
+sudo iscsiadm --mode node --targetname RECORD-ID --portal ISCSI-SERVER-IP-ADDRESS:PORT --login
+```
+Finally restart the service again
+```bash
+sudo /etc/init.d/open-iscsi restart
+```
