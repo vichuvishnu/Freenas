@@ -8,7 +8,7 @@
   * Create Zvolume
 
 
-#### Connect FreeNAS ISCSI to Ubuntu M/C
+#### [1] Connect FreeNAS ISCSI to Ubuntu M/C
 To connect FreeNAS ISCSI to and ubuntu m/c you need to install a ISCSI client and do some configurations. 
 First you need to install open-iscsi
 
