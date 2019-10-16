@@ -9,13 +9,9 @@
 [3. Replacing Fault disk from freeNAS zpool](#3-replacing-fault-disk-from-freenas-zpool)
 
 ----
-\
-\
-\
-\
-\
-\
-\
+\\\\\\\\\\\\\\\\
+
+
 
 #### 1. Connect FreeNAS ISCSI to Ubuntu M/C
 To connect FreeNAS ISCSI to and ubuntu m/c you need to install a ISCSI client and do some configurations. 
