@@ -93,10 +93,12 @@ Step 2:
 ![Alt text](Images/Replace-fault-disk-step2.png)
 Step 3:
 ![Alt text](Images/Replace-fault-disk-step3.png)
-Step 4:
+
+While replacing the disk if get some error like disk is not clean , you just need to wipe the disk 
+Step 1:
 ![Alt text](Images/Replace-fault-disk-step4.png)
-Step 5:
+Step 2:
 ![Alt text](Images/Replace-fault-disk-step5.png)
-Step 6:
+Step 3:
 ![Alt text](Images/Replace-fault-disk-step6.png)
 
