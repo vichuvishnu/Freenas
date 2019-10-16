@@ -86,7 +86,7 @@ To replace a disk in a zpool do the following steps
 ```
 Storage -> (click in volume pool name) -> (in bottom Volume status)
 ```
-There you can see disk partation attached to the pool and see that which disk goes offline or unavailable click on that disk and replace it.
+There you can see disk partation attached to the pool and see that which disk goes offline or unavailable click on that disk and replace it.\
 Step 1:
 ![Alt text](Images/Replace-fault-disk-step1.png)
 Step 2:
@@ -94,7 +94,7 @@ Step 2:
 Step 3:
 ![Alt text](Images/Replace-fault-disk-step3.png)
 
-While replacing the disk if get some error like disk is not clean , you just need to wipe the disk 
+While replacing the disk if get some error like disk is not clean , you just need to wipe the disk \
 Step 1:
 ![Alt text](Images/Replace-fault-disk-step4.png)
 Step 2:
