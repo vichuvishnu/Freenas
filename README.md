@@ -2,10 +2,9 @@
 
 
 ### Content
-1. Connect FreeNAS ISCSI to Ubuntu M/C("#1-connect-freenas-iscsi-to-ubuntu-mc")
-1. I'm an inline-style link("https://www.google.com")
-1. Storage
-   1. Volume Manager (Creating a pool)
+[1. Connect FreeNAS ISCSI to Ubuntu M/C]("#1-connect-freenas-iscsi-to-ubuntu-mc")\
+[2. Storage]("#2-storage")\
+   [2.1 Volume Manager (Creating a pool)]("#2-storage")\
    1. Create Zvolume
 1. Replacing Fault disk from freeNAS zpool
 
@@ -104,7 +103,3 @@ Step 2:
 Step 3:
 ![Alt text](Images/Replace-fault-disk-step6.png)
 
-
-
-
-<a href="http://en.wikipedia.org/wiki/Petersen_graph">Petersen Graph</a>
