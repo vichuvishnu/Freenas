@@ -2,9 +2,8 @@
 
 
 ### Content
-<a href="#1-connect-freenas-iscsi-to-ubuntu-mc">1. Connect FreeNAS ISCSI to Ubuntu M/C</a>
-[1. Connect FreeNAS ISCSI to Ubuntu M/C](#1-connect-freenas-iscsi-to-ubuntu-mc)
-[I'm an inline-style link](https://www.google.com)
+1. Connect FreeNAS ISCSI to Ubuntu M/C("#1-connect-freenas-iscsi-to-ubuntu-mc")
+1. I'm an inline-style link("https://www.google.com")
 1. Storage
    1. Volume Manager (Creating a pool)
    1. Create Zvolume
