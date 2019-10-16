@@ -83,7 +83,8 @@ Step 2:
 ![Alt text](Images/Create-Zvol-step2.png)
 
 #### 3. Replacing Fault disk from freeNAS zpool
-If the zpool disk goes unavilable or offline it means something happens to the disk its a serious issue to take care. Normaly we find this issue in alert .
+If the zpool disk goes unavilable or offline it means something happens to the disk its a serious issue to take care. Normaly we find this issue in alert.\
+
 ![Alt text](Images/Alert-volume-degraded.png.png)
 
 To replace a disk in a zpool do the following steps
