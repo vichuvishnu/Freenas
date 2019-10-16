@@ -4,10 +4,9 @@
 ### Content
 [1. Connect FreeNAS ISCSI to Ubuntu M/C](#1-connect-freenas-iscsi-to-ubuntu-mc)\
 [2. Storage](#2-storage)\
-   [2.1 Volume Manager (Creating a pool)](#2-storage)\
-   [2.1 Create Zvolume (Creating a pool)](#2-storage)\
-[3. Replacing Fault disk from freeNAS zpool](#2-storage)\
-[1. Replacing Fault disk from freeNAS zpool](#2-storage)\
+   [2.1 Volume Manager (Creating a pool)](#21-volume-manager)\
+   [2.1 Create Zvolume (Creating a pool)](#22-create-zvolume)\
+[3. Replacing Fault disk from freeNAS zpool](#2-storage)
 
 
 #### 1. Connect FreeNAS ISCSI to Ubuntu M/C
