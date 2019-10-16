@@ -113,37 +113,37 @@ zpool status -v POOL-NAME
 ```
 You can see the pool status and locate which disk goes down.
 ```bash
-pool: MyZpool
+pool: POOL-NAME
  state: DEGRADED
 status: One or more devices could not be opened.  Sufficient replicas exist for
         the pool to continue functioning in a degraded state.
-action: Attach the missing device and online it using 'zpool online'.
+action: Attach the missing device and online it using 'POOL-NAME online'.
    see: http://illumos.org/msg/ZFS-8000-2Q
 
 config:
 
         NAME                                            STATE     READ WRITE CKSUM
-        MyZpool                                         DEGRADED     0     0     0
+        POOL-NAME                                       DEGRADED     0     0     0
           raidz2-0                                      DEGRADED     0     0     0
             gptid/11111111-2222-3333-4444-555555555555  ONLINE       0     0     0
             gptid/22222222-2222-3333-4444-555555555555  ONLINE       0     0     0
-            99999999999999999999                        UNAVAIL      0     0     0  was /dev/ada2
+            99999999999999999999                        UNAVAIL      0     0     0  was /dev/da0
             gptid/33333333-2222-3333-4444-555555555555  ONLINE       0     0     0
             gptid/44444444-2222-3333-4444-555555555555  ONLINE       0     0     0
             gptid/55555555-2222-3333-4444-555555555555  ONLINE       0     0     0
 
 errors: No known data errors
 ```
-Solution via shell.\
+Solution via shell.
 1. Replace the physical hard drive. For this, shutdown the machine if necessary. 
-2. Partition the hard drive. Following is an example where we assume the disk is /dev/ada2
+2. Partition the hard drive. Following is an example where we assume the disk is /dev/da0
 ```bash
-# create gpt called ada2
-gpart create -s gpt ada2
-# create a 2G swap partition (it will be ada2p1)
-gpart add -i 1 -b 128 -t freebsd-swap -s 2G ada2
-# create a second partition using the rest of the space (it will be ada2p2)
-gpart add -i 2 -t freebsd-zfs ada2
-# replace disk labeled "99999999999999999999" by ada2p2. See the error message example above. 
-zpool replace MyZpool 99999999999999999999 ada2p2
+# create gpt called da0
+gpart create -s gpt da0
+# create a 2G swap partition (it will be da0p1)
+gpart add -i 1 -b 128 -t freebsd-swap -s 2G da0
+# create a second partition using the rest of the space (it will be da0p2)
+gpart add -i 2 -t freebsd-zfs da0
+# replace disk labeled "99999999999999999999" by da0p2. See the error message example above. 
+zpool replace MyZpool 99999999999999999999 da0p2
 ```
