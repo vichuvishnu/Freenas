@@ -6,6 +6,7 @@
 1. Storage
    1. Volume Manager (Creating a pool)
    1. Create Zvolume
+1. Replacing Fault disk from freeNAS zpool
 
 
 #### 1. Connect FreeNAS ISCSI to Ubuntu M/C
