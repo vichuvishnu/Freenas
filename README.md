@@ -82,3 +82,21 @@ Step 2:
 If the zpool disk goes unavilable or offline it means something happens to the disk its a serious issue to take care. Normaly we find this issue in alert .
 ![Alt text](Images/Alert-volume-degraded.png.png)
 
+To replace a disk in a zpool do the following steps
+```
+Storage -> (click in volume pool name) -> (in bottom Volume status)
+```
+There you can see disk partation attached to the pool and see that which disk goes offline or unavailable click on that disk and replace it.
+Step 1:
+![Alt text](Images/Replace-fault-disk-step1.png)
+Step 2:
+![Alt text](Images/Replace-fault-disk-step2.png)
+Step 3:
+![Alt text](Images/Replace-fault-disk-step3.png)
+Step 4:
+![Alt text](Images/Replace-fault-disk-step4.png)
+Step 5:
+![Alt text](Images/Replace-fault-disk-step5.png)
+Step 6:
+![Alt text](Images/Replace-fault-disk-step6.png)
+
